@@ -1,0 +1,425 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+p{
+    margin: 1em 0;
+}
+
+html, body{
+    height:100%;
+}
+
+main{
+    padding-bottom: 1em;
+}
+
+.wraper{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+footer, .push{
+    height:50px;
+}
+
+h1{
+    text-align: center;
+    margin:1em 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+header{
+    background-color: dodgerblue;
+}
+
+.header-row{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.search-field{
+    border-style: none;
+    border-radius: 5px;
+    padding: 0.8em;
+     width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.3);
+}
+
+header div:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.logo a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 2em;
+    padding:1em;
+}
+
+.search{
+    padding:1em 1em 1em 0;
+    flex-grow: 2;
+    width:auto;
+}
+
+.cart{
+    font-size: 0.85em;
+    padding:1em;
+}
+
+.cart a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.cart:hover{
+    background-color: rgba(0,0,0,.1);
+}
+
+.cart table, .cart table tr{
+    border:none;
+}
+
+.cart td{
+    padding:0.2em 0.5em;
+}
+
+.loginWidget{
+    margin-right: 1em;
+    color:white;
+}
+
+.loginWidget a{
+    text-decoration: none;
+    padding:0.5em;
+    background-color: white;
+    color:blue;
+    border-radius: 5px;
+    margin-left: 0.5em;
+    
+}
+
+header nav{
+    width: 100%;
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    float:left;
+    list-style-type: none;
+    display:flex;
+}
+header nav ul li a{
+    display:block;
+    padding: 0.7em 1em;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+header nav ul li a:hover{
+    background-color: rgba(0,0,0,.1);
+}
+
+.wrap{
+    max-width: 80%;
+    padding-top: 1em;
+    margin: 0 auto;
+}
+
+.products{
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.column{
+    width: 17.2413793103%;
+    margin-right: 3.44827586206%;
+}
+
+.column:nth-child(5n){
+    margin-right: 0;
+}
+
+.product a{
+    text-decoration: none;
+}
+.product{
+    border: 1px solid rgba(0,0,0,.05);
+    margin-bottom: 1em;
+}
+
+.product:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+.product h3{
+    margin-left: 0.5em;
+}
+
+.product img {
+    width:100%;
+    margin-bottom: 1em;
+}
+
+.product h3{
+    text-decoration-style: none;
+    color:black;
+}
+
+.product .price{
+    text-align: center;
+    padding: 1em 0;
+}
+.price:after{
+    content:" RSD";
+}
+
+.field{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    margin-bottom: 1em;
+}
+
+.field label{
+    width:25%;
+}
+
+.field input[type=password], .field input[type=text], .field textarea{
+    width:75%;
+    padding: .5em 1em;    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.field textarea{
+    height: 100px;
+}
+
+.field input[type=file]{
+    margin-left: auto;
+}
+
+.field input[type=submit], .editBtn, .delBtn {
+  margin: auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editBtn, .delBtn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: center;
+    padding:0.5em 1em;
+}
+
+tr{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+
+.delBtn{
+    background-color: firebrick;
+}
+
+.container{
+    padding-top: 1em;
+    display:flex;
+}
+
+.element-title{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.product-images{
+    width:40%;
+    position:relative;
+    margin:auto;
+}
+
+.product-details{
+    width:60%;
+    padding: 1em;
+}
+
+.product-title{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.product-price{
+    font-size: 1.5em;
+    padding-left: 1em;
+    color:#B90000;
+    margin-bottom: 1em;
+}
+
+.product-price:after{
+    content: "RSD";
+}
+
+.product-description{
+    padding:0 1em 0;
+}
+
+.add_to_cart{
+  background-color: #B90000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  transform: translatey(-50%);
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.error{
+    width: 100%;
+    background-color: firebrick;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    padding:1em;
+    margin-bottom: 1em;
+}
+.message{
+    width:100%;
+    background-color: green;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    padding:1em;
+    margin-bottom: 1em;
+}
+
+.controls{
+    display:flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+
+.edit_product_images{
+    width:250px;
+    margin-left: 1em;
+    display: fles;
+    flex-flow: column;
+}
+
+.edit_product_form{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color:white;  
+}
+
+.product-images img{
+    width:100%;
+}
+
+.product-details input{
+    padding:0.8em;
+    border-radius: 5px;
+    border:0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.150);
+    background-color: #f2f2f2;
+}
+.product-details button{
+    padding:0.8em;
+    border-radius: 5px;
+    border:0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.150);
+    background-color:#B90000;
+    color:white;
+}
+
+.product-details input[type=submit]:disabled {
+  background: #dddddd;
+}
+
+.loader {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #3498db;
+  width: 1em;
+  height: 1em;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
